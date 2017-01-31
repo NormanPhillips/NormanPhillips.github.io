@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                background: rgb(125, 198, 205);
+                color: rgb(45, 45, 45);
+                padding: 10px;
+                font-family: arial;
+            }
+            header {
+                font-size: 1.5em;
+                font-weight: bold;
+            }
+            [id=all-contents] {
+                max-width: 800px;
+                margin: auto;
+            }
+
+            /* navigation menu */
+            nav {
+                background: rgb(239, 80, 41);
+                margin: 0 auto;
+                display: flex;
+                padding: 10px;
+            }
+            nav header {
+                display: flex;
+                align-items: center;
+                color: rgb(255, 255, 255);
+                flex: 1;
+            }
+            nav ul {
+                list-style-image: none;
+            }
+            nav li {
+                display: inline-block;
+                padding: 0 10px;
+            }
+            nav a {
+                text-decoration: none;
+                color: 0000ff;
+            }
+
+            /* main container area beneath menu */
+            main {
+                background: rgb(245, 238, 219);
+                display: flex;
+            }
+            [class=sidebar] {
+                margin-right: 25px;
+                padding: 10px;
+            }
+            [class=sidebar] img {
+                width: 300px;
+            }
+            [class=content] {
+                flex: 1;
+                padding: 15px;
+            }
+            [class=interests] header {
+                font-size: 1.25em;
+            }
+        </style>
+        <title> Norman's Portfolio </title>
+    </head>
+    <body>
+         <div id="all-contents"> 
+            <nav>
+                <header>Norman's Portfolio</header>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                </ul>
+            </nav>
+
+            <main>
+                 <div class="sidebar">
+                     <img src="data:image/jpeg;base64,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">
+                </div>
+
+                <div class="content">
+                    <header>Norman Phillips</header>
+                    <p>Student at South Plaquemines High</p>
+                    <section class="interests">
+                        <header>Interests</header>
+                        <ul>
+                            <li>Gaming</li>
+                            <li>Music</li>
+                            <li>Anime</li>
+                            <li>Coding</li>
+                        </ul>
+                    </section>
+                </div>
+            </main>
+        </div>
+        
+    </body>
+</html>
